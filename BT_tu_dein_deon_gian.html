@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu dien don gian</title>
+</head>
+<body>
+<script>
+    let en = ['dog', 'table', 'teacher', 'student', 'father'];
+    let vn= [ 'Cho', 'ban','giao vien','hoc sinh',"bo"];
+    let a= prompt("Nhap tu ma ban muon");
+    let count=-1;
+    for (let i=0; i<en.length; i++){
+        if (vn[i]===a){
+            count=i;
+            break;
+        }
+    }
+    if (count>-1) {
+        document.write(en[count]);
+    }else {
+        document.write("khong tim thay");
+    }
+
+</script>
+</body>
+</html>
